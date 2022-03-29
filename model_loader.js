@@ -52,7 +52,7 @@ controls.maxDistance = 3;
 var aLight = new THREE.AmbientLight(0x404040, 1);
 scene.add(aLight);
 
-var light = new THREE.HemisphereLight(0xffffff, 0x000000, 1.5);
+var light = new THREE.HemisphereLight(0xffffff, 0x000000, 1.8);
 scene.add(light);
 
 camera.position.set(0, 0, 0.9);
