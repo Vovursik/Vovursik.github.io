@@ -1,0 +1,185 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.7.33",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "name" : "Sweater.003",
+            "rotation" : [
+                0.7071068286895752,
+                0,
+                0,
+                0.7071067094802856
+            ],
+            "scale" : [
+                0.01003729086369276,
+                0.01003729086369276,
+                0.01003729086369276
+            ],
+            "translation" : [
+                -4.3511390686035156e-05,
+                -0.0018376335501670837,
+                0.00016786158084869385
+            ]
+        }
+    ],
+    "materials" : [
+        {
+            "doubleSided" : true,
+            "name" : "Material.009",
+            "normalTexture" : {
+                "index" : 0
+            },
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 1
+                },
+                "metallicFactor" : 0,
+                "metallicRoughnessTexture" : {
+                    "index" : 2
+                }
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Shirt.008",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2,
+                        "COLOR_0" : 3
+                    },
+                    "indices" : 4,
+                    "material" : 0
+                }
+            ]
+        }
+    ],
+    "textures" : [
+        {
+            "sampler" : 0,
+            "source" : 0
+        },
+        {
+            "sampler" : 0,
+            "source" : 1
+        },
+        {
+            "sampler" : 0,
+            "source" : 2
+        }
+    ],
+    "images" : [
+        {
+            "mimeType" : "image/png",
+            "name" : "T_N1",
+            "uri" : "T_N1.png"
+        },
+        {
+            "mimeType" : "image/jpeg",
+            "name" : "T_C2_MF_RV_ST",
+            "uri" : "T_C2_MF_RV_ST.jpg"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "T_RG",
+            "uri" : "T_RG.png"
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 12507,
+            "max" : [
+                53.083152770996094,
+                13.909224510192871,
+                38.12092590332031
+            ],
+            "min" : [
+                -53.083152770996094,
+                -12.1049222946167,
+                -32.832611083984375
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 12507,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 12507,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5123,
+            "count" : 12507,
+            "normalized" : true,
+            "type" : "VEC4"
+        },
+        {
+            "bufferView" : 4,
+            "componentType" : 5123,
+            "count" : 70464,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 150084,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 150084,
+            "byteOffset" : 150084
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 100056,
+            "byteOffset" : 300168
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 100056,
+            "byteOffset" : 400224
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 140928,
+            "byteOffset" : 500280
+        }
+    ],
+    "samplers" : [
+        {
+            "magFilter" : 9729,
+            "minFilter" : 9987
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 641208,
+            "uri" : "SWT.bin"
+        }
+    ]
+}
