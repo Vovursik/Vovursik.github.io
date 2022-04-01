@@ -3,32 +3,19 @@
         "generator" : "Khronos glTF Blender I/O v1.7.33",
         "version" : "2.0"
     },
+    "extensionsUsed" : [
+        "KHR_materials_clearcoat"
+    ],
     "scene" : 0,
     "scenes" : [
         {
             "name" : "Scene",
             "nodes" : [
-                0,
-                1,
-                2
+                0
             ]
         }
     ],
     "nodes" : [
-        {
-            "name" : "Light",
-            "rotation" : [
-                0.16907575726509094,
-                0.7558803558349609,
-                -0.27217137813568115,
-                0.570947527885437
-            ],
-            "translation" : [
-                4.076245307922363,
-                5.903861999511719,
-                -1.0054539442062378
-            ]
-        },
         {
             "mesh" : 0,
             "name" : "m2_t_002_001",
@@ -43,25 +30,17 @@
                 0.009999999776482582,
                 0.009999999776482582
             ]
-        },
-        {
-            "name" : "Light.001",
-            "rotation" : [
-                0.16907575726509094,
-                0.7558804154396057,
-                -0.27217137813568115,
-                0.5709474086761475
-            ],
-            "translation" : [
-                4.076245307922363,
-                5.903861999511719,
-                -1.0054539442062378
-            ]
         }
     ],
     "materials" : [
         {
             "doubleSided" : true,
+            "extensions" : {
+                "KHR_materials_clearcoat" : {
+                    "clearcoatFactor" : 0.5409090518951416,
+                    "clearcoatRoughnessFactor" : 0.3527272641658783
+                }
+            },
             "name" : "main_material",
             "normalTexture" : {
                 "index" : 0
@@ -191,7 +170,7 @@
     "buffers" : [
         {
             "byteLength" : 106504,
-            "uri" : "project.bin"
+            "uri" : "2.bin"
         }
     ]
 }
