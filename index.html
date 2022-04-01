@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru" id="html">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="images/Icon.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="media-querise.css" type="text/css">
+
+    <title>Vovursik - Shop</title>
+
+    <script type ="module" src="theme_changer.js"></script>
+    <script type ="module" src="information.js"></script>
+</head>
+<body id ="body" style="visibility: hidden"
+onload="setTimeout ('document.body.style.visibility = \'visible\'', 2)">
+
+<div class="information" id="information">
+<div class="information_center">
+    <div class="information_up">
+        <h1>Внимание!</h1>
+        <div class="form_inline">
+            <button id="information_close_button"></button>
+        </div> 
+    </div>
+<h2><p>Сайт не является комерческим, и был создан сугубо в образовательных целях. Все цены являются вымышлеными, как и товары, представленные на сайте. Любые совпадения случайны.</p>
+    <p>Представленная на сайте информация является лишь началом для настоящего сайта. Возможны некоторые ошибки и недоработанные решения.</p>
+    <p>Основной идеей в создании сайта было использование 3D технологий для онлайн магазинов. В качестве примера мы создали несколько предметов с использованием 3D технологий. Внешний вид товаров является наброском, их качество в будущем будет улучшено</p>
+    <p>На данный момент товары нельзя добавить в покупательскую корзину (будет исправлено в ближайшее время)</p></h2>
+</div>
+</div>
+
+<!--Верхний хедер-->
+<div class="header_up">
+    <div class="header_up_left">
+        <div class="form_inline">
+            <button id="color_button"></button>
+        </div>  
+    </div>
+
+    <div class="header_up_center">
+            <h4>© Лужинский Владимир | Дорошин Георгий, МОУ «Академический лицей»</h4>
+    </div>
+
+    <div class="header_up_right">
+        <div class="form_inline">
+            <button id="help_button"></button>
+        </div>  
+        <form action="https://github.com/Vovursik" class="form_inline">
+            <button id="github_button"></button>
+        </form>         
+    </div>
+</div>
+
+<!--Нижний хедер-->
+<div class="header">
+    <div class="header_center">
+<form action="/index.html">
+    <button id="Logo"></button>
+</form>
+
+    <div class="header_section">
+            <a class="site_about" href="/about.html">  
+                <span class="a">о сайте</span>
+                <span class="b">﹝о сайте﹞</span>
+            </a>
+        </div>
+
+        <div class="header_section">
+            <form action="/cart.html">
+                <button id="cart_button"></button>
+            </form>
+    </div>
+</div>
+</div>  
+
+    <div class="container" id="products">
+        <div class="row">
+
+            <form action="/product_00.html" id="form">
+                <button class="product_card">
+                    <div class="product_image">
+                        <div class="product_open"><h2><small>🔍︎</small> просмотр</h2></div>
+                        <img src="images/products/Hat.png" width="454px" height="454px" alt=""></img>
+                    </div>
+
+                    <div class="product_info" id="product_info">
+                        <h1>Шапка</h1>
+                        <h2><del>1000&nbsp;руб.</del> 500&nbsp;руб.</h2>
+                    </div>
+                </button>
+            </form>
+            <form action="/product_01.html" id="form">
+                <button class="product_card">
+                    <div class="product_image">
+                        <div class="product_open"><h2><small>🔍︎</small> просмотр</h2></div>
+                        <img src="images/products/Sweater.png" width="454px" height="454px" alt=""></img>
+                    </div>
+
+                    <div class="product_info" id="product_info">
+                        <h1>Свитер</h1>
+                        <h2>1500 руб.</h2>
+                    </div>
+                </button>
+            </form>
+            <form action="/product_02.html" id="form">
+                <button class="product_card">
+                    <div class="product_image">
+                        <div class="product_open"><h2><small>🔍︎</small> просмотр</h2></div>
+                        <img src="images/products/Sweater2.png" width="454px" height="454px" alt=""></img>
+                    </div>
+
+                    <div class="product_info" id="product_info">
+                        <h1>Свитер (Оверсайз)</h1>
+                        <h2>1800 руб.</h2>
+                    </div>
+                </button>
+            </form>
+
+        </div>
+    </div>
+
+</body>
+</html>
