@@ -4,6 +4,9 @@ var text = [
     ["images/products/Sweater2.png", "Свитер (Оверсайз)", "1800 руб.", 1800]
 ]
 
+if (localStorage.getItem('cart_id') == null)
+localStorage.setItem('cart_id', '');
+
 var cart_products = [];
 
 var products_array = localStorage.getItem('cart_id').split('');

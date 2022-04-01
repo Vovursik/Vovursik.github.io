@@ -1,3 +1,6 @@
+if (localStorage.getItem('cart_id') == null)
+localStorage.setItem('cart_id', '');
+
 window.addEventListener('DOMContentLoaded', function(){ 
     var buttons = document.getElementsByTagName('button'); 
     for (var i = 0; i < buttons.length; i++) { 
