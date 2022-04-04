@@ -3,6 +3,9 @@
         "generator" : "Khronos glTF Blender I/O v1.7.33",
         "version" : "2.0"
     },
+    "extensionsUsed" : [
+        "KHR_materials_clearcoat"
+    ],
     "scene" : 0,
     "scenes" : [
         {
@@ -15,41 +18,37 @@
     "nodes" : [
         {
             "mesh" : 0,
-            "name" : "m2_t_002_001",
+            "name" : "Plane",
             "rotation" : [
-                0.7071068286895752,
                 0,
                 0,
-                0.7071067094802856
-            ],
-            "scale" : [
-                0.009999999776482582,
-                0.009999999776482582,
-                0.009999999776482582
+                -0.7071068286895752,
+                0.7071068286895752
             ]
         }
     ],
     "materials" : [
         {
             "doubleSided" : true,
-            "name" : "main_material",
-            "normalTexture" : {
-                "index" : 0
+            "extensions" : {
+                "KHR_materials_clearcoat" : {
+                    "clearcoatFactor" : 0.7136363387107849,
+                    "clearcoatRoughnessFactor" : 0.029999999329447746
+                }
             },
+            "name" : "Material",
             "pbrMetallicRoughness" : {
                 "baseColorTexture" : {
-                    "index" : 1
+                    "index" : 0
                 },
                 "metallicFactor" : 0,
-                "metallicRoughnessTexture" : {
-                    "index" : 2
-                }
+                "roughnessFactor" : 0.4000000059604645
             }
         }
     ],
     "meshes" : [
         {
-            "name" : "m2_t_002_001.002",
+            "name" : "Plane",
             "primitives" : [
                 {
                     "attributes" : {
@@ -67,89 +66,71 @@
         {
             "sampler" : 0,
             "source" : 0
-        },
-        {
-            "sampler" : 0,
-            "source" : 1
-        },
-        {
-            "sampler" : 0,
-            "source" : 2
         }
     ],
     "images" : [
         {
-            "mimeType" : "image/jpeg",
-            "name" : "NT",
-            "uri" : "NT.jpg"
-        },
-        {
-            "mimeType" : "image/jpeg",
-            "name" : "CT",
-            "uri" : "CT.jpg"
-        },
-        {
             "mimeType" : "image/png",
-            "name" : "RGT",
-            "uri" : "RGT.png"
+            "name" : "2",
+            "uri" : "2.png"
         }
     ],
     "accessors" : [
         {
             "bufferView" : 0,
             "componentType" : 5126,
-            "count" : 2462,
+            "count" : 88,
             "max" : [
-                39.11887741088867,
-                16.414562225341797,
-                49.524070739746094
+                0.17506639659404755,
+                0.47031736373901367,
+                0.005176793783903122
             ],
             "min" : [
-                -39.11277389526367,
-                -16.795021057128906,
-                -43.384193420410156
+                -0.17614208161830902,
+                -0.507018506526947,
+                -0.0013849851675331593
             ],
             "type" : "VEC3"
         },
         {
             "bufferView" : 1,
             "componentType" : 5126,
-            "count" : 2462,
+            "count" : 88,
             "type" : "VEC3"
         },
         {
             "bufferView" : 2,
             "componentType" : 5126,
-            "count" : 2462,
+            "count" : 88,
             "type" : "VEC2"
         },
         {
             "bufferView" : 3,
             "componentType" : 5123,
-            "count" : 13860,
+            "count" : 132,
             "type" : "SCALAR"
         }
     ],
     "bufferViews" : [
         {
             "buffer" : 0,
-            "byteLength" : 29544,
+            "byteLength" : 1056,
             "byteOffset" : 0
         },
         {
             "buffer" : 0,
-            "byteLength" : 29544,
-            "byteOffset" : 29544
+            "byteLength" : 1056,
+            "byteOffset" : 1056
         },
         {
             "buffer" : 0,
-            "byteLength" : 19696,
-            "byteOffset" : 59088
+            "byteLength" : 704,
+            "byteOffset" : 2112
         },
         {
             "buffer" : 0,
-            "byteLength" : 27720,
-            "byteOffset" : 78784
+            "byteLength" : 264,
+            "byteOffset" : 2816
         }
     ],
     "samplers" : [
@@ -160,8 +141,8 @@
     ],
     "buffers" : [
         {
-            "byteLength" : 106504,
-            "uri" : "2.bin"
+            "byteLength" : 3080,
+            "uri" : "3.bin"
         }
     ]
 }

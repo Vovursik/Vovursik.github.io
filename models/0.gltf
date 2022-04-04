@@ -1,6 +1,6 @@
 {
     "asset" : {
-        "generator" : "Khronos glTF Blender I/O v1.6.16",
+        "generator" : "Khronos glTF Blender I/O v1.7.33",
         "version" : "2.0"
     },
     "scene" : 0,
@@ -35,7 +35,7 @@
             "name" : "M",
             "normalTexture" : {
                 "index" : 0,
-                "scale" : 0
+                "scale" : 2
             },
             "pbrMetallicRoughness" : {
                 "baseColorTexture" : {
@@ -162,7 +162,7 @@
     "buffers" : [
         {
             "byteLength" : 115832,
-            "uri" : "H1.bin"
+            "uri" : "0.bin"
         }
     ]
 }

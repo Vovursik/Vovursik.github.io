@@ -40,7 +40,6 @@
                 "baseColorTexture" : {
                     "index" : 1
                 },
-                "metallicFactor" : 0,
                 "metallicRoughnessTexture" : {
                     "index" : 2
                 }
@@ -161,7 +160,7 @@
     "buffers" : [
         {
             "byteLength" : 106504,
-            "uri" : "2.bin"
+            "uri" : "untitled.bin"
         }
     ]
 }
