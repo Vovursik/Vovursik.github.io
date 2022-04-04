@@ -1,7 +1,8 @@
 var text = [ 
     ["images/products/Hat.png", "Шапка", "<del>1000&nbsp;руб.</del> 500&nbsp;руб.", 500],
     ["images/products/Sweater.png", "Свитер", "1500 руб.", 1500],
-    ["images/products/Sweater2.png", "Свитер (Оверсайз)", "1800 руб.", 1800]
+    ["images/products/Sweater2.png", "Свитер (Оверсайз)", "1800 руб.", 1800],
+    ["images/products/Sticker.png", "Стикер", "50 руб.", 50]
 ]
 
 if (localStorage.getItem('cart_id') == null)
@@ -55,8 +56,10 @@ window.addEventListener('DOMContentLoaded', function(){
     } 
     });
 
+    var _count = 1;
+
 function plus(button) {
-    cart_products[button.closest('.product_block_cart').id][1] += 1;
+    cart_products[button.closest('.product_block_cart').id][1] += _count;
     button.closest('.product_block_cart').querySelector('.count').innerHTML = cart_products[button.closest('.product_block_cart').id][1];
     subtotal += text[cart_products[button.closest('.product_block_cart').id][0]][3];
     document.querySelector('.subtotal_text').innerHTML = "Итог: " + subtotal + " руб.";
@@ -64,7 +67,7 @@ function plus(button) {
 }
 
 function minus(button) {
-    cart_products[button.closest('.product_block_cart').id][1] -= 1;
+    cart_products[button.closest('.product_block_cart').id][1] -= _count;
     button.closest('.product_block_cart').querySelector('.count').innerHTML = cart_products[button.closest('.product_block_cart').id][1];
     subtotal -= text[cart_products[button.closest('.product_block_cart').id][0]][3];
     document.querySelector('.subtotal_text').innerHTML = "Итог: " + subtotal + " руб.";

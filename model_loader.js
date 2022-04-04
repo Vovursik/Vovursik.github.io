@@ -48,11 +48,16 @@ controls.enablePan = false;
 controls.minDistance = 0.9;
 controls.maxDistance = 3;
 
-var aLight = new THREE.AmbientLight(0x404040, 1);
+var aLight = new THREE.AmbientLight(0xffffff, .6);
 scene.add(aLight);
 
-var light = new THREE.HemisphereLight(0xffffff, 0x000000, 1.8);
+var light = new THREE.PointLight(0xc4c4c4, 1);
+light.position.set(-500, 300, -500);
 scene.add(light);
+
+var light2 = new THREE.PointLight(0xc4c4c4, 1);
+light2.position.set(500, 300, 500);
+scene.add(light2);
 
 camera.position.set(0, 0, 0.9);
 

@@ -19,6 +19,8 @@
 
     <script type ="module" src="theme_changer.js"></script>
     <script type ="module" src="information.js"></script>
+    <script type ="module" src="model_loader.js"></script>
+    <script type ="module" src="cart_adder.js"></script>
 </head>
 <body id ="body" style="visibility: hidden"
 onload="setTimeout ('document.body.style.visibility = \'visible\'', 2)">
@@ -36,6 +38,8 @@ onload="setTimeout ('document.body.style.visibility = \'visible\'', 2)">
             <p>Основной идеей в создании сайта было использование 3D технологий для онлайн магазинов. В качестве примера мы создали несколько предметов с использованием 3D технологий. Внешний вид товаров является наброском, их качество в будущем будет улучшено</p></h2>
     </div>
     </div>
+
+<div id="product_id">3</div>
 
 <!--Верхний хедер-->
 <div class="header_up">
@@ -81,50 +85,37 @@ onload="setTimeout ('document.body.style.visibility = \'visible\'', 2)">
 </div>
 </div>  
 
-<div class="creators">
-    <div class="making">
-        <h1>О разработке:</h1>
-        <h2><p>Идея сайта - <i>Лужинский Владимир / Дорошин Георгий</i></p>
-            <p>Дизайн - <i>Лужинский Владимир</i></p>
-            <p>Верстка - <i>Лужинский Владимир</i></p>
-            <p>Программирование на JS - <i>Лужинский Владимир</i></p>
-            <p>2D изображения - <i>Лужинский Владимир</i></p>
-            <p>3D модели - <i>Дорошин Георгий / Лужинский Владимир (частично)</i></p>
-            <p>Текстурирование 3D моделей - <i>Дорошин Георгий</i></p>
-            <p>2D рендер моделей - <i>Дорошин Георгий</i></p></h2>
-    </div>
-    <div class="making">
-        <h1>О команде:</h1>
-        <h2><p><i>Лужинский Владимир</i> (Vovursik) - основная деятельность: разработка видеоигр / модификаций</p>
-            <p><i>Дорошин Георгий</i> ( ) - основная деятельность: 3D</p></h2>
-    </div>
-    <div class="making">
-        <h1>Использованные источники:</h1>
-        <h2><p>Сайт - форум для программистов Stackoverflow:</p>
-            <p><a href="https://stackoverflow.com">https://stackoverflow.com</a></p>
-            <p>Справочник для разработчиков сайтов MDN:</p>
-            <p><a href="https://developer.mozilla.org">https://developer.mozilla.org</a></p>
-            <p>Технология размещения 3D модели на сайте three.js:</p>
-            <p><a href="https://threejs.org">https://threejs.org</a></p>
-            <p>Свободно доступные шрифты и иконки с сайта Google Fonts:</p>
-            <p><a href="https://fonts.google.com">https://fonts.google.com</a></p>
-            <p>Видео Майка Смита "Display your own 3D Model with Javascript | three.js":</p>
-            <p><a href="https://youtu.be/F4q2cqj_Tdc">https://youtu.be/F4q2cqj_Tdc</a></p>
-            <p>Использован фон другого автора (будет заменён)</p></h2>
-    </div>
-    <div class="making">
-        <h1>Немного о three.js:</h1>
-        <h2>Технология three.js позволяет размещать на сайте сцены с 3D объектами, работать с их освещением и анимациями. 
-            На нашем сайте данная технология не полностью раскрыта в своем потенциале, использована только её маленькая часть.
-            Для того, чтобы ознакомиться со всеми фишками three.js, можно просто перейти на официальный сайт разработчиков по одной из ссылок выше.
-        </h2>
-    </div>
-    <div class="making">
-        <h1>Детали:</h1>
-        <h2><p>Все модели созданны Георгием Дорошиным и принадлежат ему лично!</p>
-            <p>Все программные и дизайнерские решения сайта принадлежат Лужинскому Владимиру!</p></h2>
-    </div>
-</div>
+    <!--Сам продукт-->
+    <div class = "product" id = "product">
+        <div class="container" id = "model">
+            <div class="loading" id="loading">
+                <div class="loading_image" id="loading_image"></div>
+            </div>
+            <div class="helper" id="helper">
+                <img src="images/helper_click1.png" id = "helper_click" width="60vw" height="60vw" alt="" align="center"> - Вращение
+                <img src="images/helper_scroll1.png" id = "helper_scroll" width="60vw" height="60vw" alt="" align="center"> - Приблизить / Отдалить
+        </div>
+        </div> 
 
+        <div class = "sale" id = "sale">
+            <div class="sale_name">
+                <div class = "sale_text">
+                <p><h2>Стикер</h2></p>
+                <p><h3>50 руб.</h3></p>
+            </div>
+        </div>
+
+        <div id = "form">
+            <button id="cart_button_light">
+                        <h4>добавить в корзину</h4>  
+            </button>
+            <button id="cart_button_dark">
+                    <h4>добавить в корзину</h4>  
+        </button>
+        </div>  
+        </div> 
+    </div> 
 </body>
+<script src="three.js"></script>
+<script type="module" src="GLTFLoader.js"></script>
 </html>

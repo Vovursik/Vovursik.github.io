@@ -27,6 +27,8 @@ body {
 
 #cart_button:hover {
     cursor: pointer;
+	background: url(images/shopping_cart_red.png) no-repeat center;
+	background-size: auto 80%;
     }
 
 #Logo {
@@ -263,7 +265,7 @@ canvas:active {
 	text-align: center;
 	top: 0;
 	left: 0;
-	margin-top: 10px;
+	margin-top: 12px;
 }
 
 .product {
@@ -621,7 +623,16 @@ canvas:active {
 	opacity: .7;
 	}
 
+.subtotal {
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	align-items: center;
+	align-content: center;
+}
+
 .subtotal h1 {
+	position: relative;
 	font-family: 'Jura', cursive;
 	font-weight: 800;
 	font-size: 50px;
@@ -631,6 +642,9 @@ canvas:active {
 	margin-bottom: 20px;
 	border-bottom: solid 2px;
 	text-align: center;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .creators {
