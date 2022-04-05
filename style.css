@@ -564,7 +564,7 @@ canvas:active {
 }
 
 .product_block_cart:hover {
-	background-color: rgba(70, 70, 70, 0.8);
+	background-color: rgba(40, 40, 40, 0.8);
 }
 
 .product_block_cart img {

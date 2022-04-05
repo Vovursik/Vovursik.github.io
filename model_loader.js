@@ -7,6 +7,8 @@ var renderer = new THREE.WebGLRenderer({alpha: true, antialias: true});
 var container = document.querySelector('.container')
 var manager = new THREE.LoadingManager();
 
+var _size = .0;
+
 manager.onLoad = function()
 {
     renderer.render( scene, camera );
@@ -16,22 +18,11 @@ manager.onLoad = function()
 renderer.setClearColor(0x000000, 0)
 
 if (window.innerWidth <= 768)
-{
-    document.getElementById("product").style.display='block';
-    document.getElementById("model").style.width='100%';
-    document.getElementById("sale").style.width='100%';
-    renderer.setSize(window.innerWidth/1.1, window.innerWidth/1.1);
-}
+    _size = 1.1;
 else if (window.innerWidth > 768)
-{
-    document.getElementById("product").style.display='flex';
-    document.getElementById("model").style.width='50%';
-    document.getElementById("sale").style.width='50%';
-    if (window.innerWidth/2.3 <= 834)
-    renderer.setSize(window.innerWidth/2.3, window.innerWidth/2.3);        
-    else
-    renderer.setSize(834, 834);
-}
+    _size = 2.3;
+
+renderer.setSize(window.innerWidth/_size, window.innerWidth/_size);   
 
 container.appendChild(renderer.domElement);
 
@@ -61,32 +52,20 @@ scene.add(light2);
 
 camera.position.set(0, 0, 0.9);
 
-window.addEventListener('resize', function (){
+window.addEventListener('resize', function (){     
     camera.aspect = 1/1;
     camera.updateProjectionMatrix();
-
-    if (window.innerWidth <= 768)
-    {
-        document.getElementById("product").style.display='block';
-        document.getElementById("model").style.width='100%';
-        document.getElementById("sale").style.width='100%';
-        renderer.setSize(window.innerWidth/1.1, window.innerWidth/1.1);
-    }
-    else if (window.innerWidth > 768)
-    {
-        document.getElementById("product").style.display='flex';
-        document.getElementById("model").style.width='50%';
-        document.getElementById("sale").style.width='50%';
-        if (window.innerWidth/2.3 <= 834)
-        renderer.setSize(window.innerWidth/2.3, window.innerWidth/2.3);        
-        else
-        renderer.setSize(834, 834);
-    }
+    renderer.setSize(window.innerWidth/_size, window.innerWidth/_size); 
 });
 
 function animate(){
         requestAnimationFrame(animate);
         controls.update();
         renderer.render(scene, camera);
+
+        if (window.innerWidth <= 768)
+            _size = 1.1; 
+        else if (window.innerWidth > 768)
+            _size = 2.3;       
     }
     animate();

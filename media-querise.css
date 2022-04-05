@@ -51,6 +51,16 @@
         font-size: 4.9vw;
         line-height: 4.9vw;
     }
+
+    #product {
+        display: block;
+    }
+    #model {
+        width: 100%;
+    }
+    #sale {
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 600px) {   
