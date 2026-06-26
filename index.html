@@ -1,144 +1,122 @@
 <!DOCTYPE html>
-<html lang="ru" id="html">
+<html id="html" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="icon" href="images/Icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" href="media_queries.css"> -->
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/icon.png" type="image/x-icon">
 
-    <link rel="stylesheet" href="style.css" type="text/css">
-    <link rel="stylesheet" href="media-querise.css" type="text/css">
+    <title>Vovursik</title>
 
-    <title>Vovursik - Shop</title>
-
-    <script type ="module" src="theme_changer.js"></script>
-    <script type ="module" src="information.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Special+Elite&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
-<body id ="body" style="visibility: hidden"
-onload="setTimeout ('document.body.style.visibility = \'visible\'', 2)">
+<body>
+    <div class="container">
+        <header class="grid_item">
+            <div class="header_center">
+                <img src="images/logo.png" alt=""></img>
+            </div>
+        </header>
 
-<div class="information" id="information">
-<div class="information_center">
-    <div class="information_up">
-        <h1>Внимание!</h1>
-        <div class="form_inline">
-            <button id="information_close_button"></button>
-        </div> 
-    </div>
-<h2><p>Сайт не является комерческим, и был создан сугубо в образовательных целях. Все цены являются вымышлеными, как и товары, представленные на сайте. Любые совпадения случайны.</p>
-    <p>Представленная на сайте информация является лишь началом для настоящего сайта. Возможны некоторые ошибки и недоработанные решения.</p>
-    <p>Основной идеей в создании сайта было использование 3D технологий для онлайн магазинов. В качестве примера мы создали несколько предметов с использованием 3D технологий. Внешний вид товаров является наброском, их качество в будущем будет улучшено</p></h2>
-</div>
-</div>
+        <nav class="grid_item">
+            <div class="nav_center">
+                <div class="nav_section">
+                    <form action="">
+                        <button>
+                            <h3 class="text_left_anim">ABOUT</h3>
+                        </button>
+                    </form>
+                </div>
+                <div class="nav_section">
+                    <form action="">
+                        <button>
+                            <h3 class="text_right_anim">PROJECTS</h3>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
 
-<!--Верхний хедер-->
-<div class="header_up">
-    <div class="header_up_left">
-        <div class="form_inline">
-            <button id="color_button"></button>
-        </div>  
-    </div>
-
-    <div class="header_up_center">
-            <h4>© Лужинский Владимир | Дорошин Георгий, МОУ «Академический лицей»</h4>
-    </div>
-
-    <div class="header_up_right">
-        <div class="form_inline">
-            <button id="help_button"></button>
-        </div>  
-        <form action="https://github.com/Vovursik" class="form_inline">
-            <button id="github_button"></button>
-        </form>         
-    </div>
-</div>
-
-<!--Нижний хедер-->
-<div class="header">
-    <div class="header_center">
-<form action="/index.html">
-    <button id="Logo"></button>
-</form>
-
-    <div class="header_section">
-            <a class="site_about" href="/about.html">  
-                <span class="a">о сайте</span>
-                <span class="b">﹝о сайте﹞</span>
-            </a>
-        </div>
-
-        <div class="header_section">
-            <form action="/cart.html">
-                <button id="cart_button"></button>
-            </form>
-    </div>
-</div>
-</div>  
-
-    <div class="container" id="products">
-        <div class="row">
-
-            <form action="/product_00.html" id="form">
-                <button class="product_card">
-                    <div class="product_image">
-                        <div class="product_open"><h2><small>🔍︎</small> просмотр</h2></div>
-                        <img src="images/products/Hat.png" width="454px" height="454px" alt=""></img>
-                    </div>
-
-                    <div class="product_info" id="product_info">
-                        <h1>Шапка</h1>
-                        <h2><del>1000&nbsp;руб.</del> 500&nbsp;руб.</h2>
-                    </div>
-                </button>
-            </form>
-            <form action="/product_01.html" id="form">
-                <button class="product_card">
-                    <div class="product_image">
-                        <div class="product_open"><h2><small>🔍︎</small> просмотр</h2></div>
-                        <img src="images/products/Sweater.png" width="454px" height="454px" alt=""></img>
-                    </div>
-
-                    <div class="product_info" id="product_info">
-                        <h1>Свитер</h1>
-                        <h2>1500 руб.</h2>
-                    </div>
-                </button>
-            </form>
-            <form action="/product_02.html" id="form">
-                <button class="product_card">
-                    <div class="product_image">
-                        <div class="product_open"><h2><small>🔍︎</small> просмотр</h2></div>
-                        <img src="images/products/Sweater2.png" width="454px" height="454px" alt=""></img>
-                    </div>
-
-                    <div class="product_info" id="product_info">
-                        <h1>Свитер (Оверсайз)</h1>
-                        <h2>1800 руб.</h2>
-                    </div>
-                </button>
-            </form>
-            <form action="/product_03.html" id="form">
-                <button class="product_card">
-                    <div class="product_image">
-                        <div class="product_open"><h2><small>🔍︎</small> просмотр</h2></div>
-                        <img src="images/products/Sticker.png" width="454px" height="454px" alt=""></img>
-                    </div>
-
-                    <div class="product_info" id="product_info">
-                        <h1>Стикер</h1>
-                        <h2>50 руб.</h2>
-                    </div>
-                </button>
-            </form>
-
-        </div>
+        <main class="grid_item">
+            <div class="main_center">
+                <div class="section_head">
+                    <span class="section_num">01</span>
+                    <h2 class="section_title"> projects</h2>
+                    <span class="section_line"></span>
+                </div>
+                <div class="option_banner">
+                    <form action="game_scene.html" method="GET" class="option_banner_card">
+                        <button type="submit" name="chapter" value="0" class="option_banner_button">
+                            <div class="option_banner_card_image">
+                                <img src="Sprites/UI/Block.png" alt="form_block"></img>
+                            </div>
+                            <div class="option_banner_card_tags">
+                                <span class="option_banner_card_eyebrow tag_game">GAME</span>
+                                <span class="option_banner_card_eyebrow tag_blood">web</span>
+                                <span class="option_banner_card_eyebrow tag_blood">in-progress</span>
+                            </div>
+                            <div class="option_banner_card_info">
+                                <h2></h2>
+                                <h1>secret project</h1>
+                             </div>
+                            <div class="option_banner_card_reveal">
+                                <h1>secret project</h1>
+                                <p>secret horror game</p>
+                                <span class="reveal_link">show more...</span>
+                            </div>
+                        </button>
+                    </form>
+                    <form action="https://github.com/Vovursik/visual_crosshair_v" method="GET" class="option_banner_card">
+                        <button type="submit" name="chapter" value="0" class="option_banner_button">
+                            <div class="option_banner_card_image">
+                                <img src="https://github.com/Vovursik/visual_crosshair_v/raw/main/icon.png" alt="form_block"></img>
+                            </div>
+                            <div class="option_banner_card_tags">
+                                <span class="option_banner_card_eyebrow tag_program">APP</span>
+                                <span class="option_banner_card_eyebrow">desktop</span>
+                            </div>
+                            <div class="option_banner_card_info">
+                                <h2></h2>
+                                <h1>Visual Crosshair V</h1>
+                             </div>
+                            <div class="option_banner_card_reveal">
+                                <h1>Visual Crosshair V</h1>
+                                <p>A tiny desktop app that draws a custom crosshair in the center of your screen</p>
+                                <span class="reveal_link">show more...</span>
+                            </div>
+                        </button>
+                    </form>
+                    <form action="https://nicholasrothschild.itch.io/the-seeking-eye" method="GET" class="option_banner_card">
+                        <button type="submit" name="chapter" value="0" class="option_banner_button">
+                            <div class="option_banner_card_image">
+                                <img src="https://img.itch.zone/aW1nLzIzOTQwMDI1LnBuZw==/315x250%23c/rOCIK%2B.png" alt="form_block"></img>
+                            </div>
+                            <div class="option_banner_card_tags">
+                                <span class="option_banner_card_eyebrow tag_gold">GAMEJAM</span>
+                                <span class="option_banner_card_eyebrow">itch.io</span>
+                            </div>
+                            <div class="option_banner_card_info">
+                                <h2></h2>
+                                <h1>THE SEEKING EYE</h1>
+                             </div>
+                            <div class="option_banner_card_reveal">
+                                <h1>THE SEEKING EYE</h1>
+                                <p>You are a mage, trapped in mysterious caves filled with monsters. Use your magic of Epiphany to reveal blocked paths, avoid dangers, and uncover the secrets of this dark place. Your vision is the key to survival in this perilous adventure</p>
+                                <span class="reveal_link">show more...</span>
+                            </div>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </main>
     </div>
 
+    <script src="menu.js"></script>
 </body>
 </html>

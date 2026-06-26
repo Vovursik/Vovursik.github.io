@@ -1,0 +1,24 @@
+@media (width < 980px) {
+    .nav_center {
+        display: grid;
+        grid-template-columns: 1fr;
+
+        max-width: none;
+    }
+
+    .hide_button_section {
+        display: block;
+    } 
+
+    .option_banner_card {
+        width: calc(50% - min(2vw, 2vh));
+    }
+
+    .options {
+        grid-template-columns: 1fr;
+    }
+
+    .options_grid_item_big {
+        grid-column: 1;
+    }
+}
