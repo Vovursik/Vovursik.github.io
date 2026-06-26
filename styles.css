@@ -149,7 +149,7 @@ main {
 	max-width: 120vh;
 	margin: 0 auto;
 	padding: min(3vw, 3vh) min(3vw, 3vh) 0 0;
-	padding-bottom: min(10vw, 10vh);
+	padding-bottom: min(4vw, 4vh);
 }
 
 .section_num {
