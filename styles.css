@@ -26,7 +26,7 @@ html {
 }
 
 body {
-    background-image: url("/images/background.png");
+    background-image: url("/images/Background.png");
     background-repeat: repeat-y;
     background-size: 180% auto;
     background-position: left top;
